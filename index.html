@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>TACA: Rethinking Cross-Modal Interaction in Multimodal Diffusion Transformers</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">TACA: Rethinking Cross-Modal Interaction in Multimodal Diffusion Transformers</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=FkkaUgwAAAAJ&hl=en" target="_blank">Zhengyao Lv*</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                    <a href="" target="_blank">Tianlin Pan*</a><sup>1,3</sup>,</span>
+                  </span>
+                <span class="author-block">
+                  <a href="https://chenyangsi.github.io/" target="_blank">Chenyang Si</a><sup>1‡</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://frozenburning.github.io/" target="_blank">Zhaoxi Chen</a><sup>5</sup>,</span>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://homepage.hit.edu.cn/wangmengzuo" target="_blank">Wangmeng Zuo</a><sup>4</sup>,</span>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://liuziwei7.github.io/" target="_blank">Ziwei Liu</a><sup>5†</sup>,</span>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://i.cs.hku.hk/~kykwong/" target="_blank">Kwan-Yee K. Wong</a><sup>2†</sup>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Nanjing University<sup>1</sup> &nbsp; The University of Hong Kong<sup>2</sup> <br> University of Chinese Academy of Sciences<sup>3</sup>&nbsp; Harbin Institute of Technology<sup>4</sup><br> S-Lab, Nanyang Technological University<sup>5</sup></span>
+                    <span class="eql-cntrb"><small><br>*Equal Contribution.&nbsp;&nbsp;&nbsp;&nbsp;<sup>‡</sup>Project Leader.&nbsp;&nbsp;&nbsp;&nbsp;<sup></sup>†</sup>Corresponding Author.</small></span>
+                  </div>
+
+                  <!-- <div class="column has-text-centered">
+                    <div class="publication-links">
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/Vchitect/FasterCache" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2410.19355" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/teaser.mp4"
+        type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+  Multimodal Diffusion Transformers (MM-DiTs) have achieved remarkable progress in text-driven visual generation. However, even state-of-the-art MM-DiT models like FLUX struggle with achieving precise alignment between text prompts and generated content. We identify two key issues in the attention mechanism of MM-DiT, namely 1) the suppression of cross-modal attention due to token imbalance between visual and textual modalities and 2) the lack of timestep-aware attention weighting, which hinder the alignment. To address these issues, we propose <b>Temperature-Adjusted Cross-modal Attention (TACA)</b>, a parameter-efficient method that dynamically rebalances multimodal interactions through temperature scaling and timestep-dependent adjustment. When combined with LoRA fine-tuning, TACA significantly enhances text-image alignment on the T2I-CompBench benchmark with minimal computational overhead. We tested TACA on state-of-the-art models like FLUX and SD3.5, demonstrating its ability to improve image-text alignment in terms of object appearance, attribute binding, and spatial relationships. Our findings highlight the importance of balancing cross-modal attention in improving semantic fidelity in text-to-image diffusion models. Our code will be made publicly available.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- teaser image -->
+<section class="hero is-small" style="display: flex; justify-content: center; align-items: center; height: 40vh; width: 100vw;">
+  <div class="hero-body">
+    <div class="container has-text-centered" style="width: 100%;">
+      <figure class="image" style="margin: 0 auto; width: 100%;">
+        <img src="static/images/teaser.png" alt="Description of the image" style="width: 65%; height: auto; display: block; margin: 0 auto;">
+      </figure>
+      <h2 class="subtitle" style="font-size: 16px;">
+        Figure 1: We propose <b>TACA</b>, a parameter-efficient method that dynamically rebalances cross-modal attention <br> in multimodal diffusion transformers to improve text-image alignment.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- end teaser image -->
+
+
+<!-- New section: FasterCache-DFR -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-left">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Reweighting the cross-modal tempertaure</h2> <!-- 一级标题 -->
+        
+        <h3 class="title is-4">Motivation</h3> <!-- 二级标题 -->
+        <p>
+  Even state-of-the-art Multimodal Diffusion Transformers (MM-DiTs) still struggle to produce images with precise alignment to the provided text prompts. We observed two specific issues within the MM-DiT attention mechanism that contribute to this semantic misalignment: first, the cross-modal attention between visual and text tokens is suppressed due to the significant imbalance in their numbers, and second, the attention weighting does not adapt to the varying needs of the denoising process across different timesteps. These observations highlight the need for better control over how visual and textual information interact within the model to improve the semantic fidelity of generated images.
+        </p>
+        <!-- Add an image to support the explanation -->
+        <figure class="image" style="text-align: center; margin: 20px 0;">
+          <img src="static/images/motivation1.png" alt="Cross-modal attention suppression">
+          <figcaption>Figure 2: Relative magnitude of visual-text attention between the typical cross attention and MM-DiT full attention (averaged over 50 samples). The numerical asymmetry between the number of  visual and text tokens suppresses the magnitude of cross attention, leading to weak alignment between the generated image and the given text prompt. We can amplify the cross-attention by boosting the coefficient \( \gamma \), thereby strengthening the alignment between the image and text.</figcaption>
+        </figure>
+
+        <h3 class="title is-4">Implementation</h3> <!-- 二级标题 -->
+        <p>
+    To mitigate the suppression of cross-attention caused by the dominance of visual tokens, we amplify the logits of visual-text interactions through a <b>temperature coefficient</b> \(\gamma > 1\). The modified attention probability for visual-text interaction becomes:
+\begin{equation}
+P_{\mathrm{vis-txt}}^{(i,\,j)} = \frac{ e^{{\color{blue}\gamma} s_{ij}^{\mathrm{vt}}/\tau}}{\sum_{k=1}^{N_{\mathrm{txt}}} e^{{\color{blue}\gamma} s_{ik}^{\mathrm{vt}}/\tau} + \sum_{k=1}^{N_{\mathrm{vis}}} e^{s_{ik}^{\mathrm{vv}}/\tau}},
+\end{equation}
+        </p>
+        <p>
+where \(s_{ik}^{\mathrm{vt}} = \boldsymbol Q^{(i)}_{\mathrm{vis}}\boldsymbol K_{\mathrm{txt}}^{T\,(k)}/\sqrt{D}\) and \(s_{ik}^{\mathrm{vv}}=\boldsymbol Q^{(i)}_{\mathrm{vis}}\boldsymbol K_{\mathrm{vis}}^{T\,(k)}/\sqrt{D}\).
+        </p>
+        
+        <figure class="image" style="text-align: center; margin: 20px 0;">
+          <img src="static/images/attn_map_vis.png" alt="Attention map visualization">
+          <figcaption>Figure 3: Attention map differences. We conducted a visualization of the alterations in the visual-text attention map during the initial stages of the denoising process, as influenced by our proposed method. In contrast to the baseline, our approach substantially amplifies the attention directed toward the text in the early steps.</figcaption>
+        </figure>
+
+        <h3 class="title is-4">Visual Effect</h3> <!-- 二级标题 -->
+        <figure class="image" style="margin: 0 auto; width: 70%;">
+          <img src="static/images/various_gamma.png" alt="Effect of different gamma values">
+          <figcaption>Figure 4: Temperature scaling helps visual-text alignment. From this figure, we can see that as the temperature scaling factor \(\gamma\) increases, the characteristics of <i>brown backpack</i>, <i>mirror</i> and <i>black stomach</i> become more obvious.</figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of FasterCache-DFR -->
+
+
+
+<!-- New section: FasterCache-DFR -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-left">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Evaluation</h2> <!-- 一级标题 -->
+        
+        <h3 class="title is-4">Quantitative Results</h3> <!-- 二级标题 -->
+        <p>
+        </p>
+        <!-- Add an image to support the explanation -->
+        <figure class="image" style="text-align: center; margin: 20px 0;">
+          <img src="static/images/quan_res.png" alt="Quantitative results of TACA">
+        </figure>
+
+        <h3 class="title is-4">Visual Results</h3> <!-- 二级标题 -->
+        <p>
+        </p>
+        <h4 class="title is-5">Short Prompts</h4> 
+        <figure class="image" style="text-align: center; margin: 20px 0;"></figure>
+          <img src="static/images/short_1.png" alt="Quantitative results of TACA">
+          <img src="static/images/short_2.png" alt="Quantitative results of TACA">
+        </figure>
+        <h4 class="title is-5">Long Prompts</h4> 
+        <figure class="image" style="text-align: center; margin: 20px 0;"></figure>
+          <img src="static/images/long_1.png" alt="Quantitative results of TACA">
+          <img src="static/images/long_2.png" alt="Quantitative results of TACA">
+          <img src="static/images/long_3.png" alt="Quantitative results of TACA">
+          <img src="static/images/long_4.png" alt="Quantitative results of TACA">
+        </figure>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of FasterCache-DFR -->
+
+
+<!-- 
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Related Work</h2>
+        <div class="content has-text-justified">
+            <ol>
+              <li>Zhao, Xuanlei, Xiaolong Jin, Kai Wang, and Yang You. "Real-Time Video Generation with Pyramid Attention Broadcast." arXiv preprint arXiv:2408.12588 (2024).</li>
+            </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{lv2025taca,
+  title={TACA: Rethinking Cross-Modal Interaction in Multimodal Diffusion Transformers},
+  author={Lv, Zhengyao and Pan, Tianlin and Si, Chenyang and Chen, Zhaoxi and Zuo, Wangmeng and Liu, Ziwei and Kwan-Yee K. Wong},
+  booktitle={arxiv},
+  year={2025}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
