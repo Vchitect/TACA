@@ -7,7 +7,7 @@
       <a href="https://scholar.google.com/citations?user=FkkaUgwAAAAJ&hl=en" target="_blank">Zhengyao Lv*</a><sup>2</sup>,</span>
     </span>
     <span class="author-block">
-      <a href="" target="_blank">Tianlin Pan*</a><sup>1,3</sup>,</span>
+      <a href="https://tianlinn.com/" target="_blank">Tianlin Pan*</a><sup>1,3</sup>,</span>
     </span>
     <span class="author-block">
       <a href="https://chenyangsi.github.io/" target="_blank">Chenyang Si</a><sup>5‡</sup>,</span>
