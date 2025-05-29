@@ -1,0 +1,2 @@
+torch==2.5.1    # For flex attention
+diffusers==0.33.1
