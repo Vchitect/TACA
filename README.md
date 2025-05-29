@@ -10,7 +10,7 @@
       <a href="https://tianlinn.com/" target="_blank">Tianlin Pan*</a><sup>1,3</sup>,</span>
     </span>
     <span class="author-block">
-      <a href="https://chenyangsi.github.io/" target="_blank">Chenyang Si</a><sup>5‡</sup>,</span>
+      <a href="https://chenyangsi.github.io/" target="_blank">Chenyang Si</a><sup>5‡†</sup>,</span>
     </span>
     <span class="author-block">
       <a href="https://frozenburning.github.io/" target="_blank">Zhaoxi Chen</a><sup>5</sup>,</span>
