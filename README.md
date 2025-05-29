@@ -55,3 +55,18 @@ For FLUX.1, run:
 ``` sh
 python infer/infer_flux.py
 ```
+
+# Benchmark
+Comparison of alignment evaluation on T2I-CompBench for FLUX.1-Dev-based and SD3.5-Medium-based models.
+
+| Model | Attribute Binding | | | Object Relationship | | Complex $\uparrow$ |
+|---|---|---|---|---|---|---|
+| | Color $\uparrow$ | Shape $\uparrow$ | Texture $\uparrow$ | Spatial $\uparrow$ | Non-Spatial $\uparrow$ | |
+| FLUX.1-Dev | 0.7678 | 0.5064 | 0.6756 | 0.2066 | 0.3035 | 0.4359 |
+| FLUX.1-Dev + TACA ($r = 64$) | **0.7843** | **0.5362** | **0.6872** | **0.2405** | 0.3041 | **0.4494** |
+| FLUX.1-Dev + TACA ($r = 16$) | 0.7842 | 0.5347 | 0.6814 | 0.2321 | **0.3046** | 0.4479 |
+| SD3.5-Medium | 0.7890 | 0.5770 | 0.7328 | 0.2087 | 0.3104 | 0.4441 |
+| SD3.5-Medium + TACA ($r = 64$) | **0.8074** | **0.5938** | **0.7522** | **0.2678** | 0.3106 | 0.4470 |
+| SD3.5-Medium + TACA ($r = 16$) | 0.7984 | 0.5834 | 0.7467 | 0.2374 | **0.3111** | **0.4505** |
+
+# Showcases
