@@ -6,7 +6,7 @@ pipe = pipe.to("cuda")
 
 prompt = "A beautiful landscape with mountains and a river."
 
-# Uncomment the following line if you just want training-free inference
+# Comment the following line if you just want training-free inference
 pipe.load_lora_weights('path/to/lora_weights')
 
 image = pipe(
@@ -14,4 +14,4 @@ image = pipe(
     num_inference_steps=30,
 ).images[0]
 
-image.save(f"out.png")
+image.save("out.png")
