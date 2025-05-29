@@ -35,6 +35,11 @@
 </div>
 <div align="center">(*Equal Contribution.&nbsp;&nbsp;&nbsp;&nbsp;<sup>‡</sup>Project Leader.&nbsp;&nbsp;&nbsp;&nbsp;<sup>†</sup>Corresponding Author.)</div>
 
+<p align="center">
+    <a href="https://arxiv.org/abs/">Paper</a> | 
+    <a href="https://vchitect.github.io/TACA/">Project Page</a>
+</p>
+
 # About
 We propose **TACA**, a parameter-efficient method that dynamically rebalances cross-modal attention in multimodal diffusion transformers to improve text-image alignment.
 
