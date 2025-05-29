@@ -70,3 +70,7 @@ Comparison of alignment evaluation on T2I-CompBench for FLUX.1-Dev-based and SD3
 | SD3.5-Medium + TACA ($r = 16$) | 0.7984 | 0.5834 | 0.7467 | 0.2374 | **0.3111** | **0.4505** |
 
 # Showcases
+![](static/images/short_1.png)
+![](static/images/short_2.png)
+![](static/images/long_1.png)
+![](static/images/long_2.png)
