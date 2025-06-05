@@ -43,7 +43,7 @@
 # About
 We propose **TACA**, a parameter-efficient method that dynamically rebalances cross-modal attention in multimodal diffusion transformers to improve text-image alignment.
 
-https://github.com/user-attachments/assets/52694219-e3a9-403f-bab7-c4d3f9b49f28
+https://github.com/user-attachments/assets/ae15a853-ee99-4eee-b0fd-8f5f53c308f9
 
 # Usage
 For Stable Diffusion 3.5, simply run:
