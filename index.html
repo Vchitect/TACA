@@ -135,7 +135,6 @@
   </div>
 </section>
 <!-- End teaser video -->
-
 <!-- JuxtaposeJS Section -->
 <section class="section hero">
   <div class="container is-max-desktop">
@@ -270,8 +269,26 @@
             }
           };
           
+          // Track the currently active comparison
+          let currentComparison = '1';
+          
           // Function to switch between comparisons
           function switchComparison(id) {
+            // Skip if clicking the already active comparison
+            if (id === currentComparison) {
+              return;
+            }
+            
+            // Update current comparison ID
+            currentComparison = id;
+            
+            // Highlight active card and remove highlight from others
+            document.querySelectorAll('.card').forEach(card => {
+              card.classList.remove('is-selected');
+            });
+            
+            document.querySelector(`.card[onclick="switchComparison('${id}')"]`).classList.add('is-selected');
+            
             const comparison = comparisons[id];
             const container = document.getElementById('juxtapose-1');
             container.innerHTML = '';
@@ -299,8 +316,44 @@
           }
           
           document.addEventListener('DOMContentLoaded', function() {
+            // Add a selected class for visual feedback
+            document.head.insertAdjacentHTML('beforeend', `
+              <style>
+                .card.is-selected {
+                  border: 2px solid #3273dc;
+                  background-color: rgba(50, 115, 220, 0.1);
+                }
+              </style>
+            `);
+            
             // Initialize with the first comparison
-            switchComparison('1');
+            const firstComparison = comparisons['1'];
+            
+            // Create the initial JuxtaposeJS slider
+            new juxtapose.JXSlider('#juxtapose-1',
+              [
+                {
+                  src: firstComparison.before,
+                  label: 'Before (Baseline)'
+                },
+                {
+                  src: firstComparison.after,
+                  label: 'After (TACA)'
+                }
+              ],
+              {
+                startingPosition: "50%",
+                showLabels: true,
+                showCredits: false,
+                makeResponsive: true
+              });
+            
+            // Set the caption for the first comparison
+            document.getElementById('comparison-caption').innerHTML = '<em>' + firstComparison.caption + '</em>';
+            
+            // Mark the first card as selected
+            document.querySelector(`.card[onclick="switchComparison('1')"]`).classList.add('is-selected');
+            currentComparison = '1';
           });
         </script>
       </div>
