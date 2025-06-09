@@ -122,7 +122,6 @@
   </div>
 </section>
 
-
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
@@ -136,6 +135,181 @@
   </div>
 </section>
 <!-- End teaser video -->
+
+<!-- JuxtaposeJS Section -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-left">
+      <div class="column is-four-fifths">
+        <!-- JuxtaposeJS CSS and JS -->
+        <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
+        <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+        
+        <!-- First comparison -->
+        <div class="comparison-container" style="margin: 20px 0;">
+          <div id="juxtapose-1" style="width: 100%; height: 400px;"></div>
+          <p id="comparison-caption" class="has-text-centered" style="margin-top: 10px;">
+            <em>"The crisp green lettuce lay next to the <b>juicy red tomato</b>"</em>
+          </p>
+        </div>
+        
+        <!-- Comparison selection grid -->
+        <div class="columns is-multiline is-mobile is-centered" style="margin-top: 20px;">
+          <div class="column is-4-tablet is-6-mobile">
+            <div class="card" style="cursor: pointer;" onclick="switchComparison('1')">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="static/images/compare/flux/The crisp green lettuce lay next to the juicy red tomato._000302_ori.png" alt="Lettuce and tomato" style="object-fit: cover;">
+                </figure>
+              </div>
+              <div class="card-content" style="padding: 0.5rem;">
+                <p class="is-size-7 has-text-centered">Lettuce and tomato</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="column is-4-tablet is-6-mobile">
+            <div class="card" style="cursor: pointer;" onclick="switchComparison('2')">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="static/images/compare/flux/The red vase was on top of the wooden shelf._000168_ori.png" alt="Red vase" style="object-fit: cover;">
+                </figure>
+              </div>
+              <div class="card-content" style="padding: 0.5rem;">
+                <p class="is-size-7 has-text-centered">Red vase on wooden shelf</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="column is-4-tablet is-6-mobile">
+            <div class="card" style="cursor: pointer;" onclick="switchComparison('3')">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="static/images/compare/flux/The fluffy white clouds floated above the tall skyscrapers._000409_ori.png" alt="Clouds and skyscrapers" style="object-fit: cover;">
+                </figure>
+              </div>
+              <div class="card-content" style="padding: 0.5rem;">
+                <p class="is-size-7 has-text-centered">Clouds above skyscrapers</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="column is-4-tablet is-6-mobile">
+            <div class="card" style="cursor: pointer;" onclick="switchComparison('4')">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="static/images/compare/flux/The crisp apple lay beside the rough stone and the silky fabric._000580_ori.png" alt="Apple, stone and fabric" style="object-fit: cover;">
+                </figure>
+              </div>
+              <div class="card-content" style="padding: 0.5rem;">
+                <p class="is-size-7 has-text-centered">Apple, stone and fabric</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="column is-4-tablet is-6-mobile">
+            <div class="card" style="cursor: pointer;" onclick="switchComparison('5')">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="static/images/compare/flux/The juicy watermelon quenched the thirsty mouth and the dry throat._000682_ori.png" alt="Watermelon" style="object-fit: cover;">
+                </figure>
+              </div>
+              <div class="card-content" style="padding: 0.5rem;">
+                <p class="is-size-7 has-text-centered">Juicy watermelon</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="column is-4-tablet is-6-mobile">
+            <div class="card" style="cursor: pointer;" onclick="switchComparison('6')">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="static/images/compare/flux/The sweet banana split topped with the crunchy nuts and the soft whipped cream._000744_ori.png" alt="Banana split" style="object-fit: cover;">
+                </figure>
+              </div>
+              <div class="card-content" style="padding: 0.5rem;">
+                <p class="is-size-7 has-text-centered">Banana split dessert</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Initialize JuxtaposeJS -->
+        <script>
+          // Configuration for different comparisons
+          const comparisons = {
+            '1': {
+              before: 'static/images/compare/flux/The crisp green lettuce lay next to the juicy red tomato._000302_ori.png',
+              after: 'static/images/compare/flux/The crisp green lettuce lay next to the juicy red tomato._000302_ours.png',
+              caption: '"The crisp green lettuce lay next to the <b>juicy red tomato</b>"'
+            },
+            '2': {
+              before: 'static/images/compare/flux/The red vase was on top of the wooden shelf._000168_ori.png',
+              after: 'static/images/compare/flux/The red vase was on top of the wooden shelf._000168_ours.png',
+              caption: '"The red vase was <b>on top of</b> the wooden shelf"'
+            },
+            '3': {
+              before: 'static/images/compare/flux/The fluffy white clouds floated above the tall skyscrapers._000409_ori.png',
+              after: 'static/images/compare/flux/The fluffy white clouds floated above the tall skyscrapers._000409_ours.png',
+              caption: '"The fluffy white clouds <b>floated above the</b> tall skyscrapers"'
+            },
+            '4': {
+              before: 'static/images/compare/flux/The crisp apple lay beside the rough stone and the silky fabric._000580_ori.png',
+              after: 'static/images/compare/flux/The crisp apple lay beside the rough stone and the silky fabric._000580_ours.png',
+              caption: '"The crisp apple lay beside the <b>rough stone</b> and the silky fabric"'
+            },
+            '5': {
+              before: 'static/images/compare/flux/The juicy watermelon quenched the thirsty mouth and the dry throat._000682_ori.png',
+              after: 'static/images/compare/flux/The juicy watermelon quenched the thirsty mouth and the dry throat._000682_ours.png',
+              caption: '"The juicy watermelon quenched the thirsty mouth and the dry throat"'
+            },
+            '6': {
+              before: 'static/images/compare/flux/The sweet banana split topped with the crunchy nuts and the soft whipped cream._000744_ori.png',
+              after: 'static/images/compare/flux/The sweet banana split topped with the crunchy nuts and the soft whipped cream._000744_ours.png',
+              caption: '"The sweet <b>banana split</b> topped with the <b>crunchy nuts</b> and the <b>soft whipped cream</b>"'
+            }
+          };
+          
+          // Function to switch between comparisons
+          function switchComparison(id) {
+            const comparison = comparisons[id];
+            const container = document.getElementById('juxtapose-1');
+            container.innerHTML = '';
+            
+            new juxtapose.JXSlider('#juxtapose-1',
+              [
+                {
+                  src: comparison.before,
+                  label: 'Before (Baseline)'
+                },
+                {
+                  src: comparison.after,
+                  label: 'After (TACA)'
+                }
+              ],
+              {
+                startingPosition: "50%",
+                showLabels: true,
+                showCredits: false,
+                makeResponsive: true
+              });
+              
+            // Update caption
+            document.getElementById('comparison-caption').innerHTML = '<em>' + comparison.caption + '</em>';
+          }
+          
+          document.addEventListener('DOMContentLoaded', function() {
+            // Initialize with the first comparison
+            switchComparison('1');
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of JuxtaposeJS Section -->
+
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -214,8 +388,6 @@ where \(s_{ik}^{\mathrm{vt}} = \boldsymbol Q^{(i)}_{\mathrm{vis}}\boldsymbol K_{
   </div>
 </section>
 <!-- End of FasterCache-DFR -->
-
-
 
 <!-- New section: FasterCache-DFR -->
 <section class="section hero is-light">
