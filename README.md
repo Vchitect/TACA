@@ -38,6 +38,7 @@
 <p align="center">
     <a href="https://arxiv.org/abs/">Paper</a> | 
     <a href="https://vchitect.github.io/TACA/">Project Page</a>
+    <a href="https://huggingface.co/ldiex/TACA/tree/main">LoRA Weights</a>
 </p>
 
 # About
