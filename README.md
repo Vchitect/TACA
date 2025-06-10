@@ -36,7 +36,7 @@
 <div align="center">(*Equal Contribution.&nbsp;&nbsp;&nbsp;&nbsp;<sup>‡</sup>Project Leader.&nbsp;&nbsp;&nbsp;&nbsp;<sup>†</sup>Corresponding Author.)</div>
 
 <p align="center">
-    <a href="https://arxiv.org/abs/">Paper</a> | 
+    <a href="https://arxiv.org/abs/2506.07986/">Paper</a> | 
     <a href="https://vchitect.github.io/TACA/">Project Page</a>
 </p>
 
