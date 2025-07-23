@@ -10,7 +10,7 @@
       <a href="https://tianlinn.com/" target="_blank">Tianlin Pan*</a><sup>2,3</sup>,</span>
     </span>
     <span class="author-block">
-      <a href="https://chenyangsi.github.io/" target="_blank">Chenyang Si</a><sup>2‡†</sup>,</span>
+      <a href="https://chenyangsi.github.io/" target="_blank">Chenyang Si*</a><sup>2</sup>,</span>
     </span>
     <span class="author-block">
       <a href="https://frozenburning.github.io/" target="_blank">Zhaoxi Chen</a><sup>4</sup>,</span>
@@ -33,7 +33,7 @@
     <sup>4</sup>Nanyang Technological University<br> 
     <sup>5</sup>Harbin Institute of Technology
 </div>
-<div align="center">(*Equal Contribution.&nbsp;&nbsp;&nbsp;&nbsp;<sup>‡</sup>Project Leader.&nbsp;&nbsp;&nbsp;&nbsp;<sup>†</sup>Corresponding Author.)</div>
+<div align="center">(*Equal Contribution.&nbsp;&nbsp;&nbsp;&nbsp;<sup>†</sup>Corresponding Author.)</div>
 
 <p align="center">
     <a href="https://arxiv.org/abs/2506.07986/">Paper</a> | 
